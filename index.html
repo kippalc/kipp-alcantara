@@ -13,7 +13,7 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <!-- ?v=… nach jeder Änderung an der CSS-Datei hochzählen, damit Besucher nicht die alte Fassung sehen -->
-  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="stylesheet" href="css/style.css?v=12">
 </head>
 <body>
   <main class="wrap">
@@ -32,7 +32,7 @@
       <!-- ENTWURF von Claude – bitte in deiner eigenen Stimme umschreiben -->
       <div class="text">
         <p>Ich komme aus der Postproduktion. Seit 2018 schneide ich bei UFA Show &amp; Factual Erklärfilme für „Wer weiß denn sowas?“. Fehlt mir dabei ein Werkzeug, baue ich es selbst, mit KI-Agenten in Python, JavaScript und Swift.</p>
-        <p>Im AI Board der UFA gebe ich dieses Wissen weiter: wie man generative KI in der Produktion einsetzt, zum Beispiel mit ElevenLabs. Meine Werkzeuge stehen den Kolleginnen und Kollegen dort zur Verfügung.</p>
+        <p>Im AI Board meines Arbeitgebers gebe ich dieses Wissen weiter: wie man generative KI in der Produktion einsetzt, zum Beispiel mit ElevenLabs. Meine Werkzeuge stehen den Kolleginnen und Kollegen dort zur Verfügung.</p>
       </div>
     </section>
 
@@ -49,7 +49,11 @@
           <h3>KI-Schnitt mit Claude und der Creative Cloud</h3>
           <p class="kurz">Ein KI-Agent baut Rohschnitt und Animation direkt in Premiere Pro und After Effects.</p>
         </header>
-        <!-- BILD FEHLT: Aufnahme mit eigenem Material einsetzen, kein Sendematerial (img/werkzeuge/ki-schnitt.jpg oder video/ki-schnitt.mp4) -->
+        <!-- Später durch eine Bildschirmaufnahme mit eigenem Material ersetzen (video/ki-schnitt.mp4), kein Sendematerial -->
+        <figure>
+          <img src="img/werkzeuge/ki-schnitt.jpg" width="1920" height="1080" loading="lazy" alt="Bild aus einer Animation: Titel „Warum ruckelt ein Video?“ über fünf Balken, einer davon rot">
+          <figcaption>Ein Bild aus einer Demo-Animation, die der Agent per Skript in After Effects gebaut hat: Texte, Balken, Keyframes und Marker.</figcaption>
+        </figure>
         <dl class="spec">
           <dt>Problem</dt><dd>Ein Erklärfilm besteht aus vielen gleichen Handgriffen: Sprechertext anhören, Schnitte setzen, Texte und Grafiken einbauen, Sounds anlegen, alles kontrollieren.</dd>
           <dt>Lösung</dt><dd>Der Agent liest das Skript, transkribiert den Sprechertext auf das Wort genau, legt den Rohschnitt in Premiere Pro an, baut Einblendungen in After Effects und prüft sein Ergebnis selbst mit Kontrollbildern und Pegelmessung. Heraus kommt ein normales, editierbares Projekt. Feinschliff und Abnahme bleiben bei mir.</dd>
@@ -82,7 +86,10 @@
           <h3>OneClick Motion</h3>
           <p class="kurz">96 Animationen für After Effects, jede mit einem Klick.</p>
         </header>
-        <!-- BILD FEHLT: echtes Bildschirmfoto des Panels in After Effects einsetzen (img/werkzeuge/oneclick-motion.jpg) -->
+        <figure class="schmal">
+          <img src="img/werkzeuge/oneclick-motion.jpg" width="1316" height="1370" loading="lazy" alt="Das Panel OneClick Motion in After Effects mit einer Tabelle aus Kamera-Bewegungen in vier Stärken">
+          <figcaption>Das Panel in After Effects: jede Schaltfläche ist eine fertige Animation.</figcaption>
+        </figure>
         <dl class="spec">
           <dt>Problem</dt><dd>Ranfahrten, Pop-ins, Ken-Burns-Fahrten und Blenden baut man in jedem Film wieder von Hand, Keyframe für Keyframe.</dd>
           <dt>Lösung</dt><dd>Ein Panel in After Effects mit 96 fertigen Animationen. Ebene auswählen, klicken, fertig. Tempo, Dauer und Startpunkt lassen sich oben im Panel umstellen.</dd>
@@ -105,7 +112,7 @@
           <dt>Problem</dt><dd>Der passende Sound liegt irgendwo in tausenden Dateien. Suchen, vorhören und importieren kostet bei jedem Film Zeit.</dd>
           <dt>Lösung</dt><dd>Eine Mac-App, die nach Bedeutung sucht statt nur nach Dateinamen, die Lautstärke beim Vorhören angleicht und jeden Sound per Drag &amp; Drop direkt in die Premiere-Timeline legt.</dd>
           <dt>Technik</dt><dd>Swift und SwiftUI, 208 automatische Tests.</dd>
-          <dt>Stand</dt><dd>Version 1.0.1. Kolleginnen und Kollegen bei UFA arbeiten damit.</dd>
+          <dt>Stand</dt><dd>Version 1.0.1. Kolleginnen und Kollegen im Schnitt arbeiten damit.</dd>
         </dl>
       </article>
 
@@ -116,14 +123,14 @@
           <p class="kurz">Zählt die fertigen Beiträge einer Staffel und zeigt, ob die Produktion auf Kurs ist.</p>
         </header>
         <figure>
-          <img src="img/werkzeuge/maz-tracker.jpg" width="1180" height="1150" loading="lazy" alt="Dashboard des MAZ Trackers mit Tageszahlen, Gesamtstand, Prognose und einer Warnung">
-          <figcaption>Das Dashboard, hier mit Testdaten.</figcaption>
+          <img src="img/werkzeuge/maz-tracker.jpg" width="1180" height="560" loading="lazy" alt="Dashboard des MAZ Trackers mit Tageszahlen, Gesamtstand und Prognose">
+          <figcaption>Ausschnitt aus dem Dashboard, mit erfundenen Testdaten.</figcaption>
         </figure>
         <dl class="spec">
           <dt>Problem</dt><dd>Eine Staffel braucht hunderte Einspieler. Wie viele fertig sind und ob das Tempo reicht, wurde von Hand gezählt und gemeldet.</dd>
           <dt>Lösung</dt><dd>Das Programm zählt die Dateien selbst, rechnet Tempo und Prognose gegen den Plan und meldet, was nicht stimmt: doppelt abgelegte, liegengebliebene oder verschwundene Beiträge. Heraus kommt ein Dashboard als eine einzige HTML-Datei und ein fertiger Text für den Team-Chat.</dd>
           <dt>Technik</dt><dd>Python, nur Standardbibliothek. Kein Server, kein Login, ein Lauf dauert unter einer Sekunde.</dd>
-          <dt>Stand</dt><dd>Im Einsatz in der laufenden Staffel von „Wer weiß denn sowas?“.</dd>
+          <dt>Stand</dt><dd>Im Einsatz in einer laufenden TV-Produktion.</dd>
         </dl>
       </article>
     </section>

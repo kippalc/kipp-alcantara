@@ -138,6 +138,7 @@ figure img, figure video {
   border-radius: 8px;
   background: var(--flaeche);
 }
+figure.schmal img { max-width: 520px; }
 figcaption {
   margin-top: 8px;
   font-size: 14px;
