@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thomas Kipp Alcantara · Film, Schnitt, Apps</title>
+  <meta name="description" content="Thomas Kipp Alcantara aus Overath: Filmproduktion für Musik und Marken, Schnitt und Motion, Apps und Tools nach Maß.">
+  <!-- Vorschaubild für Links in WhatsApp, LinkedIn usw. braucht die volle Adresse.
+       Annahme: Die Seite läuft später unter https://kipp-alcantara.de – sonst hier anpassen. -->
+  <meta property="og:title" content="Thomas Kipp Alcantara">
+  <meta property="og:description" content="Ich setze Dinge um. Mit und ohne KI.">
+  <meta property="og:image" content="https://kipp-alcantara.de/img/thomas.jpg">
+  <meta property="og:url" content="https://kipp-alcantara.de/">
+  <meta property="og:type" content="profile">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- ?v=… nach jeder Änderung an CSS/JS hochzählen, damit Besucher nicht die alte Fassung aus dem Zwischenspeicher sehen -->
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+  <main class="wrap">
+
+    <header class="top">
+      <span data-i18n="ort">Overath · weltweit</span>
+      <nav class="sprache" aria-label="Sprache">
+        <button type="button" data-lang="de" aria-pressed="true">DE</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </nav>
+    </header>
+
+    <div class="kopf">
+      <div>
+        <h1>Thomas Kipp Alcantara</h1>
+        <p class="claim" data-i18n="claim">Ich setze Dinge um. Mit und ohne KI.</p>
+      </div>
+      <img class="foto" src="img/thomas.jpg" width="640" height="640" alt="Porträt von Thomas Kipp Alcantara">
+    </div>
+
+    <section aria-labelledby="h-ueber">
+      <h2 id="h-ueber" data-i18n="ueber.titel">Über mich</h2>
+      <!-- ENTWURF von Claude – bitte in deiner eigenen Stimme umschreiben (DE und EN in js/texte.js) -->
+      <p data-i18n="ueber.text">Ich komme vom Film: Kamera, Schnitt, Motion. Fehlt mir dabei ein Werkzeug, baue ich es mir selbst, mit KI. So sind Panels für Premiere und After Effects entstanden und KippScan, eine iPhone-App für meine eigene Pokémon-Kartensammlung. Mir ist nicht wichtig, wie etwas gemacht ist, sondern dass es funktioniert.</p>
+    </section>
+
+    <section aria-labelledby="h-angebot">
+      <h2 id="h-angebot" data-i18n="angebot.titel">Was ich mache</h2>
+      <dl class="spec">
+        <dt>Film</dt><dd data-i18n="angebot.film">Musikvideos, Konzertfilme und Content für Marken</dd>
+        <dt data-i18n="angebot.post.titel">Postproduktion</dt><dd data-i18n="angebot.post">Schnitt, Color Grading, Motion Design</dd>
+        <dt>Software</dt><dd data-i18n="angebot.software">Apps und Tools nach Maß, etwa für Premiere und After Effects</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="h-umgesetzt">
+      <h2 id="h-umgesetzt" data-i18n="umgesetzt.titel">Umgesetzt</h2>
+      <!-- Neuer Eintrag: ein <li> kopieren, Nummer anpassen. Die Einordnung („art“) steht in js/texte.js.
+           Nur Belegbares: keine Kunden oder Projekte, die nicht stimmen. Braun: nicht aufnehmen. -->
+      <ol class="liste">
+        <li class="gruppe" data-i18n="gruppe.film">Film</li>
+        <li>
+          <span class="nr">01</span>
+          <span class="was"><span data-i18n="musik.name">Musik</span><span class="art" data-i18n="art.filmproduktion">Filmproduktion für</span></span>
+          <!-- Reihenfolge = Gewichtung. Der Punkt hängt am Namen davor, damit keine Zeile mit „·“ beginnt. -->
+          <span class="namen"><span>Tim Bendzko ·</span> <span>Oliver Pocher ·</span> <span>Esther Graf ·</span> <span>Cat Ballou ·</span> <span>Mo-Torres ·</span> <span>ZSK ·</span> <span>LEA x LINDA ·</span> <span>K-FLY ·</span> <span>Mag Wolfskin ·</span> <span>Kaya Q ·</span> <span>Tim Schulz ·</span> <span>WIR bleiben WIR ·</span> <span>Plätzchen Rapzept</span></span>
+        </li>
+        <li>
+          <span class="nr">02</span>
+          <span class="was"><span data-i18n="marken.name">Marken &amp; Labels</span><span class="art" data-i18n="art.filmproduktion">Filmproduktion für</span></span>
+          <span class="namen"><span>Universal Music ·</span> <span>Ford ·</span> <span>Netto</span></span>
+        </li>
+
+        <li class="gruppe" data-i18n="gruppe.apps">Apps &amp; Tools</li>
+        <li>
+          <span class="nr">03</span>
+          <span class="was">KippScan<span class="art" data-i18n="art.iphone">iPhone-App</span></span>
+          <a class="link" href="https://kippscan.de">kippscan.de</a>
+        </li>
+        <li>
+          <span class="nr">04</span>
+          <span class="was">FreezeFramesFinder<span class="art" data-i18n="art.panel">Premiere-Panel</span></span>
+          <a class="link" href="https://freezeframesfinder.de">freezeframesfinder.de</a>
+        </li>
+        <!-- Wieder aufnehmen, sobald es eine öffentliche Seite dazu gibt:
+        <li><span class="nr">05</span><span class="was">Cuelaro<span class="art">Mac-App</span></span><a class="link" href="…">…</a></li>
+        <li><span class="nr">06</span><span class="was">KAS Motion Tools<span class="art">Presets für After Effects</span></span><a class="link" href="…">…</a></li>
+        -->
+      </ol>
+    </section>
+
+    <section aria-labelledby="h-kontakt" id="kontakt">
+      <h2 id="h-kontakt" data-i18n="kontakt.titel">Kontakt</h2>
+      <div>
+        <p class="anstoss" data-i18n="kontakt.anstoss">Du brauchst einen Film, einen Schnitt oder ein Werkzeug? Schreib mir.</p>
+        <dl class="spec">
+          <dt data-i18n="kontakt.mail">E-Mail</dt><dd><a href="mailto:thomas@kipp-alcantara.de">thomas@kipp-alcantara.de</a></dd>
+          <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/thomas-kipp-alcantara/" rel="me">thomas-kipp-alcantara</a></dd>
+        </dl>
+        <a class="btn" href="kontakt.vcf" download="Thomas Kipp Alcantara.vcf" data-i18n="kontakt.speichern">Kontakt speichern</a>
+      </div>
+    </section>
+
+    <footer class="fuss">
+      <a href="impressum.html" data-i18n="fuss.impressum">Impressum</a>
+      <a href="datenschutz.html" data-i18n="fuss.datenschutz">Datenschutz</a>
+    </footer>
+
+  </main>
+
+  <script src="js/texte.js?v=3"></script>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>

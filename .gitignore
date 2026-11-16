@@ -1,0 +1,7 @@
+# Nicht mit veröffentlichen
+.claude/
+Thomas Kipp Alcantara.png
+.DS_Store
+# img/qr.svg bleibt im Ordner: für gedruckte Visitenkarten, wird auf der Seite nicht angezeigt
+# Design-Entwürfe, nur zum Auswählen
+_richtungen/

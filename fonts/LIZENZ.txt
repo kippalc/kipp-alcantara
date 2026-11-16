@@ -1,0 +1,8 @@
+Die Schriften in diesem Ordner stehen unter der SIL Open Font License 1.1
+(https://openfontlicense.org) und dürfen frei genutzt und mitgeliefert werden.
+
+- Instrument Serif – Copyright 2022 The Instrument Serif Project Authors
+- Inter – Copyright 2020 The Inter Project Authors
+- IBM Plex Mono – Copyright 2017 IBM Corp.
+
+Quelle: Google Fonts (nur die Zeichensätze für lateinische Schrift inkl. Umlaute).
