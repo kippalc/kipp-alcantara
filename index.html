@@ -14,6 +14,7 @@
   <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <!-- ?v=… nach jeder Änderung an der CSS-Datei hochzählen, damit Besucher nicht die alte Fassung sehen -->
   <link rel="stylesheet" href="css/style.css?v=12">
+  <link rel="stylesheet" href="css/demos.css?v=3">
 </head>
 <body>
   <main class="wrap">
@@ -50,10 +51,9 @@
           <p class="kurz">Ein KI-Agent baut Rohschnitt und Animation direkt in Premiere Pro und After Effects.</p>
         </header>
         <!-- Später durch eine Bildschirmaufnahme mit eigenem Material ersetzen (video/ki-schnitt.mp4), kein Sendematerial -->
-        <figure>
-          <img src="img/werkzeuge/ki-schnitt.jpg" width="1372" height="860" loading="lazy" alt="After Effects mit einer Erklärfilm-Komposition und der Timeline voller Keyframes und Marker">
-          <figcaption>Eine Demo-Komposition in After Effects, komplett vom Agenten per Skript gebaut: Ebenen, Keyframes und Marker in der Timeline.</figcaption>
-        </figure>
+        <div class="demo" data-demo="ki-schnitt" role="group" aria-label="Interaktiver Nachbau"></div>
+        <p class="demo-hinweis">Nachbau zum Ausprobieren: Abspielen, oder in der Timeline klicken und ziehen. So baut der Agent die Komposition Wort für Wort auf den Sprechertext.</p>
+        <details class="original"><summary>Bildschirmfoto aus After Effects</summary><img src="img/werkzeuge/ki-schnitt.jpg" width="1372" height="860" loading="lazy" alt="After Effects mit einer Erklärfilm-Komposition und der Timeline voller Keyframes und Marker"></details>
         <dl class="spec">
           <dt>Problem</dt><dd>Ein Erklärfilm besteht aus vielen gleichen Handgriffen: Sprechertext anhören, Schnitte setzen, Texte und Grafiken einbauen, Sounds anlegen, alles kontrollieren.</dd>
           <dt>Lösung</dt><dd>Der Agent liest das Skript, transkribiert den Sprechertext auf das Wort genau, legt den Rohschnitt in Premiere Pro an, baut Einblendungen in After Effects und prüft sein Ergebnis selbst mit Kontrollbildern und Pegelmessung. Heraus kommt ein normales, editierbares Projekt. Feinschliff und Abnahme bleiben bei mir.</dd>
@@ -68,10 +68,9 @@
           <h3>TNT Margin Intelligence</h3>
           <p class="kurz">Ein Analyse-Werkzeug fürs Controlling, das über 70 Millionen Datenzeilen abgleicht.</p>
         </header>
-        <figure>
-          <img src="img/werkzeuge/tnt-finance.jpg" width="2000" height="1250" loading="lazy" alt="Unscharfe Ansicht eines Finanz-Dashboards mit Kennzahl-Kacheln, Filtern und einer Tabelle">
-          <figcaption>Bewusst unscharf: Die Inhalte sind vertraulich. Zu sehen ist nur der Aufbau des Cockpits.</figcaption>
-        </figure>
+        <div class="demo" data-demo="tnt" role="group" aria-label="Interaktiver Nachbau"></div>
+        <p class="demo-hinweis">Nachbau mit erfundenen Zahlen: Vergleich wählen und einen Balken anklicken.</p>
+        <details class="original"><summary>Bildschirmfoto des echten Programms, bewusst unscharf</summary><img src="img/werkzeuge/tnt-finance.jpg" width="2000" height="1250" loading="lazy" alt="Unscharfe Ansicht eines Finanz-Dashboards mit Kennzahl-Kacheln, Filtern und einer Tabelle"></details>
         <dl class="spec">
           <dt>Problem</dt><dd>Margen über viele Länder, Produkte, Pläne und Monate zu vergleichen und zu erklären, war Handarbeit in großen Tabellen.</dd>
           <dt>Lösung</dt><dd>Eine Web-Anwendung, die die Exporte einliest, Ist gegen Vorjahr, Budget und Forecast stellt und für jede Abweichung zeigt, woher sie kommt. Dazu ein Cockpit fürs Management und ein PDF-Bericht, der dieselben Zahlen nutzt wie die App.</dd>
@@ -86,10 +85,9 @@
           <h3>FreezeFramesFinder</h3>
           <p class="kurz">Findet doppelte Frames in fertigen Videos, bevor die Abnahme sie findet.</p>
         </header>
-        <figure>
-          <img src="img/werkzeuge/freezeframesfinder.webp" width="2160" height="1398" loading="lazy" alt="FreezeFramesFinder zeigt zehn Stellen mit doppelten Frames samt Timecode und vermuteter Ursache">
-          <figcaption>Ergebnis einer Prüfung: jede Stelle mit Timecode, Vorschaubild und vermuteter Ursache.</figcaption>
-        </figure>
+        <div class="demo" data-demo="fff" role="group" aria-label="Interaktiver Nachbau"></div>
+        <p class="demo-hinweis">Nachbau zum Ausprobieren: Datei wählen, auf eine rote Stelle zeigen, „Bilder vergleichen“ oder „So beheben“ klicken.</p>
+        <details class="original"><summary>Bildschirmfoto des echten Programms</summary><img src="img/werkzeuge/freezeframesfinder.webp" width="2160" height="1398" loading="lazy" alt="FreezeFramesFinder zeigt zehn Stellen mit doppelten Frames samt Timecode und vermuteter Ursache"></details>
         <dl class="spec">
           <dt>Problem</dt><dd>Nach einer Bildraten- oder Tempowandlung wiederholen sich einzelne Bilder. Das Video ruckelt, und man sieht es oft erst in der Abnahme.</dd>
           <dt>Lösung</dt><dd>Das Programm prüft den Export, nennt jede Stelle und die wahrscheinliche Ursache und zeigt, wie man sie in Premiere Pro oder After Effects behebt.</dd>
@@ -104,10 +102,9 @@
           <h3>OneClick Motion</h3>
           <p class="kurz">96 Animationen für After Effects, jede mit einem Klick.</p>
         </header>
-        <figure class="schmal">
-          <img src="img/werkzeuge/oneclick-motion.jpg" width="1316" height="1370" loading="lazy" alt="Das Panel OneClick Motion in After Effects mit einer Tabelle aus Kamera-Bewegungen in vier Stärken">
-          <figcaption>Das Panel in After Effects: jede Schaltfläche ist eine fertige Animation.</figcaption>
-        </figure>
+        <div class="demo" data-demo="ocm" role="group" aria-label="Interaktiver Nachbau"></div>
+        <p class="demo-hinweis">Nachbau zum Ausprobieren: Maus über eine Schaltfläche zeigt die Bewegung, ein Klick wendet sie an.</p>
+        <details class="original"><summary>Bildschirmfoto des Panels in After Effects</summary><img src="img/werkzeuge/oneclick-motion.jpg" width="1316" height="1370" loading="lazy" alt="Das Panel OneClick Motion in After Effects mit einer Tabelle aus Kamera-Bewegungen in vier Stärken"></details>
         <dl class="spec">
           <dt>Problem</dt><dd>Ranfahrten, Pop-ins, Ken-Burns-Fahrten und Blenden baut man in jedem Film wieder von Hand, Keyframe für Keyframe.</dd>
           <dt>Lösung</dt><dd>Ein Panel in After Effects mit 96 fertigen Animationen. Ebene auswählen, klicken, fertig. Tempo, Dauer und Startpunkt lassen sich oben im Panel umstellen.</dd>
@@ -122,10 +119,9 @@
           <h3>Cuelaro</h3>
           <p class="kurz">Die Sound-Bibliothek, die Sounddesign deutlich schneller macht.</p>
         </header>
-        <figure>
-          <img src="img/werkzeuge/cuelaro.jpg" width="2000" height="1253" loading="lazy" alt="Cuelaro mit einer Bibliothek aus 1.558 Sounds, Rubriken links und Wellenformen in der Liste">
-          <figcaption>Meine Bibliothek mit 1.558 Sounds, sortiert in 18 Rubriken.</figcaption>
-        </figure>
+        <div class="demo" data-demo="cuelaro" role="group" aria-label="Interaktiver Nachbau"></div>
+        <p class="demo-hinweis">Nachbau zum Ausprobieren: suchen, vorhören und einen Sound in die Timeline ziehen. Die Töne sind im Browser erzeugt.</p>
+        <details class="original"><summary>Bildschirmfoto der App mit meiner Bibliothek</summary><img src="img/werkzeuge/cuelaro.jpg" width="2000" height="1253" loading="lazy" alt="Cuelaro mit einer Bibliothek aus 1.558 Sounds, Rubriken links und Wellenformen in der Liste"></details>
         <dl class="spec">
           <dt>Problem</dt><dd>Der passende Sound liegt irgendwo in tausenden Dateien. Suchen, vorhören und importieren kostet bei jedem Film Zeit.</dd>
           <dt>Lösung</dt><dd>Eine Mac-App, die nach Bedeutung sucht statt nur nach Dateinamen, die Lautstärke beim Vorhören angleicht und jeden Sound per Drag &amp; Drop direkt in die Premiere-Timeline legt.</dd>
@@ -140,10 +136,9 @@
           <h3>MAZ Tracker</h3>
           <p class="kurz">Zählt die fertigen Beiträge einer Staffel und zeigt, ob die Produktion auf Kurs ist.</p>
         </header>
-        <figure>
-          <img src="img/werkzeuge/maz-tracker.jpg" width="1180" height="560" loading="lazy" alt="Dashboard des MAZ Trackers mit Tageszahlen, Gesamtstand und Prognose">
-          <figcaption>Ausschnitt aus dem Dashboard, mit erfundenen Testdaten.</figcaption>
-        </figure>
+        <div class="demo" data-demo="maz" role="group" aria-label="Interaktiver Nachbau"></div>
+        <p class="demo-hinweis">Nachbau mit erfundenen Zahlen: Schnitttage simulieren und zusehen, wie Prognose und Warnungen reagieren.</p>
+        <details class="original"><summary>Bildschirmfoto des Dashboards mit Testdaten</summary><img src="img/werkzeuge/maz-tracker.jpg" width="1180" height="560" loading="lazy" alt="Dashboard des MAZ Trackers mit Tageszahlen, Gesamtstand und Prognose"></details>
         <dl class="spec">
           <dt>Problem</dt><dd>Eine Staffel braucht hunderte Einspieler. Wie viele fertig sind und ob das Tempo reicht, wurde von Hand gezählt und gemeldet.</dd>
           <dt>Lösung</dt><dd>Das Programm zählt die Dateien selbst, rechnet Tempo und Prognose gegen den Plan und meldet, was nicht stimmt: doppelt abgelegte, liegengebliebene oder verschwundene Beiträge. Heraus kommt ein Dashboard als eine einzige HTML-Datei und ein fertiger Text für den Team-Chat.</dd>
@@ -178,5 +173,6 @@
     </footer>
 
   </main>
+  <script src="js/demos.js?v=2" defer></script>
 </body>
 </html>
