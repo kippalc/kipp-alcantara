@@ -13,10 +13,15 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <!-- ?v=… nach jeder Änderung an der CSS-Datei hochzählen, damit Besucher nicht die alte Fassung sehen -->
-  <link rel="stylesheet" href="css/style.css?v=12">
+  <link rel="stylesheet" href="css/style.css?v=13">
   <link rel="stylesheet" href="css/demos.css?v=3">
+  <script>try{if(localStorage.getItem("farbe")==="dunkel")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 </head>
 <body>
+  <div class="farbwahl" role="group" aria-label="Darstellung">
+    <button type="button" data-farbe="hell" aria-pressed="true">Hell</button>
+    <button type="button" data-farbe="dunkel" aria-pressed="false">Dunkel</button>
+  </div>
   <main class="wrap">
 
     <header class="kopf">
@@ -174,5 +179,6 @@
 
   </main>
   <script src="js/demos.js?v=2" defer></script>
+  <script src="js/farbe.js?v=1" defer></script>
 </body>
 </html>

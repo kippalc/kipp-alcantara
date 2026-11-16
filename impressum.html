@@ -6,9 +6,14 @@
   <title>Impressum · Thomas Kipp Alcantara</title>
   <meta name="robots" content="noindex">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css?v=12">
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <script>try{if(localStorage.getItem("farbe")==="dunkel")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 </head>
 <body>
+  <div class="farbwahl" role="group" aria-label="Darstellung">
+    <button type="button" data-farbe="hell" aria-pressed="true">Hell</button>
+    <button type="button" data-farbe="dunkel" aria-pressed="false">Dunkel</button>
+  </div>
   <main class="wrap recht">
     <header class="top">
       <a class="zurueck" href="index.html">← Thomas Kipp Alcantara</a>
@@ -38,5 +43,6 @@
       <a href="datenschutz.html">Datenschutz</a>
     </footer>
   </main>
+  <script src="js/farbe.js?v=1" defer></script>
 </body>
 </html>
