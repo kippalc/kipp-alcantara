@@ -12,7 +12,8 @@
   --linie: #e6e8ec;
   --flaeche: #f5f6f8;
   --akzent: #2457d6;
-  --schrift: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --schrift: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+  --anzeige: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   color-scheme: light;
 }
@@ -42,6 +43,8 @@ body {
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
 }
 
 .wrap {
@@ -63,16 +66,17 @@ h1, h2, h3, p, dl, dd, figure { margin: 0; }
   gap: 32px;
 }
 .rolle {
-  font-family: var(--mono);
-  font-size: 13px;
-  color: var(--grau);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--akzent);
   margin-bottom: 14px;
 }
 h1 {
-  font-size: clamp(34px, 6vw, 54px);
-  line-height: 1.08;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-family: var(--anzeige);
+  font-size: clamp(36px, 6.4vw, 60px);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 .claim {
   margin-top: 16px;
@@ -95,9 +99,9 @@ section {
   border-top: 1px solid var(--linie);
 }
 h2 {
-  font-family: var(--mono);
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
   color: var(--grau);
   margin-bottom: 24px;
 }
@@ -117,15 +121,17 @@ h2 {
   align-items: baseline;
 }
 .nr {
-  font-family: var(--mono);
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
   color: var(--akzent);
 }
 h3 {
-  font-size: clamp(24px, 3.6vw, 30px);
-  line-height: 1.2;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-family: var(--anzeige);
+  font-size: clamp(24px, 3.6vw, 32px);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 .kurz {
   grid-column: 2;
@@ -162,9 +168,9 @@ section > .spec { margin-top: 0; }
 }
 .spec dt:first-of-type, .spec dt:first-of-type + dd { border-top: 0; padding-top: 0; }
 .spec dt {
-  font-family: var(--mono);
-  font-size: 13px;
-  line-height: 2;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.75;
   color: var(--grau);
 }
 .spec dd { color: var(--text-2); }
