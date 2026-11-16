@@ -3,111 +3,155 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thomas Kipp Alcantara · Film, Schnitt, Apps</title>
-  <meta name="description" content="Thomas Kipp Alcantara aus Overath: Filmproduktion für Musik und Marken, Schnitt und Motion, Apps und Tools nach Maß.">
-  <!-- Vorschaubild für Links in WhatsApp, LinkedIn usw. braucht die volle Adresse.
-       Annahme: Die Seite läuft später unter https://kipp-alcantara.de – sonst hier anpassen. -->
+  <title>Thomas Kipp Alcantara · Mediengestalter Bild und Ton, Creative AI Developer</title>
+  <meta name="description" content="Thomas Kipp Alcantara aus Overath: Mediengestalter Bild und Ton und Creative AI Developer. Eigene Werkzeuge für Schnitt, Animation, Sounddesign und Produktionsplanung.">
   <meta property="og:title" content="Thomas Kipp Alcantara">
-  <meta property="og:description" content="Ich setze Dinge um. Mit und ohne KI.">
+  <meta property="og:description" content="Mediengestalter Bild und Ton und Creative AI Developer. Ich baue die Werkzeuge, die mir im Schnitt fehlen.">
   <meta property="og:image" content="https://kipp-alcantara.de/img/thomas.jpg">
   <meta property="og:url" content="https://kipp-alcantara.de/">
   <meta property="og:type" content="profile">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
-  <!-- ?v=… nach jeder Änderung an CSS/JS hochzählen, damit Besucher nicht die alte Fassung aus dem Zwischenspeicher sehen -->
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- ?v=… nach jeder Änderung an der CSS-Datei hochzählen, damit Besucher nicht die alte Fassung sehen -->
+  <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
   <main class="wrap">
 
-    <header class="top">
-      <span data-i18n="ort">Overath · weltweit</span>
-      <nav class="sprache" aria-label="Sprache">
-        <button type="button" data-lang="de" aria-pressed="true">DE</button>
-        <span aria-hidden="true">/</span>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
-      </nav>
-    </header>
-
-    <div class="kopf">
+    <header class="kopf">
       <div>
+        <p class="rolle">Mediengestalter Bild und Ton · Creative AI Developer</p>
         <h1>Thomas Kipp Alcantara</h1>
-        <p class="claim" data-i18n="claim">Ich setze Dinge um. Mit und ohne KI.</p>
+        <p class="claim">Ich baue die Werkzeuge, die mir im Schnitt fehlen.</p>
       </div>
       <img class="foto" src="img/thomas.jpg" width="640" height="640" alt="Porträt von Thomas Kipp Alcantara">
-    </div>
+    </header>
 
     <section aria-labelledby="h-ueber">
-      <h2 id="h-ueber" data-i18n="ueber.titel">Über mich</h2>
-      <!-- ENTWURF von Claude – bitte in deiner eigenen Stimme umschreiben (DE und EN in js/texte.js) -->
-      <p data-i18n="ueber.text">Ich komme vom Film: Kamera, Schnitt, Motion. Fehlt mir dabei ein Werkzeug, baue ich es mir selbst, mit KI. So sind Panels für Premiere und After Effects entstanden und KippScan, eine iPhone-App für meine eigene Pokémon-Kartensammlung. Mir ist nicht wichtig, wie etwas gemacht ist, sondern dass es funktioniert.</p>
+      <h2 id="h-ueber">Über mich</h2>
+      <!-- ENTWURF von Claude – bitte in deiner eigenen Stimme umschreiben -->
+      <div class="text">
+        <p>Ich komme aus der Postproduktion. Seit 2018 schneide ich bei UFA Show &amp; Factual Erklärfilme für „Wer weiß denn sowas?“. Fehlt mir dabei ein Werkzeug, baue ich es selbst, mit KI-Agenten in Python, JavaScript und Swift.</p>
+        <p>Im AI Board der UFA gebe ich dieses Wissen weiter: wie man generative KI in der Produktion einsetzt, zum Beispiel mit ElevenLabs. Meine Werkzeuge stehen den Kolleginnen und Kollegen dort zur Verfügung.</p>
+      </div>
     </section>
 
-    <section aria-labelledby="h-angebot">
-      <h2 id="h-angebot" data-i18n="angebot.titel">Was ich mache</h2>
+    <section aria-labelledby="h-werkzeuge">
+      <h2 id="h-werkzeuge">Fünf Werkzeuge</h2>
+
+      <!-- Neues Werkzeug: einen <article> kopieren, Nummer anpassen. Nur Belegbares.
+           Videos: sobald eine Aufnahme da ist, das <img> durch
+           <video controls preload="none" poster="img/werkzeuge/NAME.jpg" src="video/NAME.mp4"></video> ersetzen. -->
+
+      <article class="werkzeug" id="ki-schnitt">
+        <header>
+          <span class="nr">01</span>
+          <h3>KI-Schnitt mit Claude und der Creative Cloud</h3>
+          <p class="kurz">Ein KI-Agent baut Rohschnitt und Animation direkt in Premiere Pro und After Effects.</p>
+        </header>
+        <!-- BILD FEHLT: Aufnahme mit eigenem Material einsetzen, kein Sendematerial (img/werkzeuge/ki-schnitt.jpg oder video/ki-schnitt.mp4) -->
+        <dl class="spec">
+          <dt>Problem</dt><dd>Ein Erklärfilm besteht aus vielen gleichen Handgriffen: Sprechertext anhören, Schnitte setzen, Texte und Grafiken einbauen, Sounds anlegen, alles kontrollieren.</dd>
+          <dt>Lösung</dt><dd>Der Agent liest das Skript, transkribiert den Sprechertext auf das Wort genau, legt den Rohschnitt in Premiere Pro an, baut Einblendungen in After Effects und prüft sein Ergebnis selbst mit Kontrollbildern und Pegelmessung. Heraus kommt ein normales, editierbares Projekt. Feinschliff und Abnahme bleiben bei mir.</dd>
+          <dt>Technik</dt><dd>Eigene Erweiterung für Premiere Pro und After Effects, Skript-Bibliotheken in ExtendScript, Transkription mit Whisper, Prüfwerkzeuge in Swift und Python.</dd>
+          <dt>Stand</dt><dd>Im eigenen Einsatz seit Oktober 2026, über 900 protokollierte Arbeitsschritte in den ersten drei Tagen.</dd>
+        </dl>
+      </article>
+
+      <article class="werkzeug" id="freezeframesfinder">
+        <header>
+          <span class="nr">02</span>
+          <h3>FreezeFramesFinder</h3>
+          <p class="kurz">Findet doppelte Frames in fertigen Videos, bevor die Abnahme sie findet.</p>
+        </header>
+        <figure>
+          <img src="img/werkzeuge/freezeframesfinder.webp" width="2160" height="1398" loading="lazy" alt="FreezeFramesFinder zeigt zehn Stellen mit doppelten Frames samt Timecode und vermuteter Ursache">
+          <figcaption>Ergebnis einer Prüfung: jede Stelle mit Timecode, Vorschaubild und vermuteter Ursache.</figcaption>
+        </figure>
+        <dl class="spec">
+          <dt>Problem</dt><dd>Nach einer Bildraten- oder Tempowandlung wiederholen sich einzelne Bilder. Das Video ruckelt, und man sieht es oft erst in der Abnahme.</dd>
+          <dt>Lösung</dt><dd>Das Programm prüft den Export, nennt jede Stelle und die wahrscheinliche Ursache und zeigt, wie man sie in Premiere Pro oder After Effects behebt.</dd>
+          <dt>Technik</dt><dd>Python, FFmpeg, NumPy. Panel für Premiere Pro und After Effects in JavaScript.</dd>
+          <dt>Stand</dt><dd>Version 1.5.1 für Mac erhältlich auf <a href="https://freezeframesfinder.de">freezeframesfinder.de</a>. Version 1.7.0 mit Panel und Windows-Fassung ist in Arbeit.</dd>
+        </dl>
+      </article>
+
+      <article class="werkzeug" id="oneclick-motion">
+        <header>
+          <span class="nr">03</span>
+          <h3>OneClick Motion</h3>
+          <p class="kurz">96 Animationen für After Effects, jede mit einem Klick.</p>
+        </header>
+        <!-- BILD FEHLT: echtes Bildschirmfoto des Panels in After Effects einsetzen (img/werkzeuge/oneclick-motion.jpg) -->
+        <dl class="spec">
+          <dt>Problem</dt><dd>Ranfahrten, Pop-ins, Ken-Burns-Fahrten und Blenden baut man in jedem Film wieder von Hand, Keyframe für Keyframe.</dd>
+          <dt>Lösung</dt><dd>Ein Panel in After Effects mit 96 fertigen Animationen. Ebene auswählen, klicken, fertig. Tempo, Dauer und Startpunkt lassen sich oben im Panel umstellen.</dd>
+          <dt>Technik</dt><dd>ExtendScript. Alle Presets und das Panel entstehen aus einer einzigen Liste, Generator und Tests laufen in Node.js.</dd>
+          <dt>Stand</dt><dd>Version 2, im eigenen Einsatz.</dd>
+        </dl>
+      </article>
+
+      <article class="werkzeug" id="cuelaro">
+        <header>
+          <span class="nr">04</span>
+          <h3>Cuelaro</h3>
+          <p class="kurz">Die Sound-Bibliothek, die Sounddesign deutlich schneller macht.</p>
+        </header>
+        <figure>
+          <img src="img/werkzeuge/cuelaro.jpg" width="2000" height="1253" loading="lazy" alt="Cuelaro mit einer Bibliothek aus 1.558 Sounds, Rubriken links und Wellenformen in der Liste">
+          <figcaption>Meine Bibliothek mit 1.558 Sounds, sortiert in 18 Rubriken.</figcaption>
+        </figure>
+        <dl class="spec">
+          <dt>Problem</dt><dd>Der passende Sound liegt irgendwo in tausenden Dateien. Suchen, vorhören und importieren kostet bei jedem Film Zeit.</dd>
+          <dt>Lösung</dt><dd>Eine Mac-App, die nach Bedeutung sucht statt nur nach Dateinamen, die Lautstärke beim Vorhören angleicht und jeden Sound per Drag &amp; Drop direkt in die Premiere-Timeline legt.</dd>
+          <dt>Technik</dt><dd>Swift und SwiftUI, 208 automatische Tests.</dd>
+          <dt>Stand</dt><dd>Version 1.0.1. Kolleginnen und Kollegen bei UFA arbeiten damit.</dd>
+        </dl>
+      </article>
+
+      <article class="werkzeug" id="maz-tracker">
+        <header>
+          <span class="nr">05</span>
+          <h3>MAZ Tracker</h3>
+          <p class="kurz">Zählt die fertigen Beiträge einer Staffel und zeigt, ob die Produktion auf Kurs ist.</p>
+        </header>
+        <figure>
+          <img src="img/werkzeuge/maz-tracker.jpg" width="1180" height="1150" loading="lazy" alt="Dashboard des MAZ Trackers mit Tageszahlen, Gesamtstand, Prognose und einer Warnung">
+          <figcaption>Das Dashboard, hier mit Testdaten.</figcaption>
+        </figure>
+        <dl class="spec">
+          <dt>Problem</dt><dd>Eine Staffel braucht hunderte Einspieler. Wie viele fertig sind und ob das Tempo reicht, wurde von Hand gezählt und gemeldet.</dd>
+          <dt>Lösung</dt><dd>Das Programm zählt die Dateien selbst, rechnet Tempo und Prognose gegen den Plan und meldet, was nicht stimmt: doppelt abgelegte, liegengebliebene oder verschwundene Beiträge. Heraus kommt ein Dashboard als eine einzige HTML-Datei und ein fertiger Text für den Team-Chat.</dd>
+          <dt>Technik</dt><dd>Python, nur Standardbibliothek. Kein Server, kein Login, ein Lauf dauert unter einer Sekunde.</dd>
+          <dt>Stand</dt><dd>Im Einsatz in der laufenden Staffel von „Wer weiß denn sowas?“.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <section aria-labelledby="h-weitere">
+      <h2 id="h-weitere">Außerdem</h2>
       <dl class="spec">
-        <dt>Film</dt><dd data-i18n="angebot.film">Musikvideos, Konzertfilme und Content für Marken</dd>
-        <dt data-i18n="angebot.post.titel">Postproduktion</dt><dd data-i18n="angebot.post">Schnitt, Color Grading, Motion Design</dd>
-        <dt>Software</dt><dd data-i18n="angebot.software">Apps und Tools nach Maß, etwa für Premiere und After Effects</dd>
+        <dt>FlowKit</dt><dd>Panel für Premiere Pro und After Effects: Projekt ordnen, mehrere Formate mit einem Klick exportieren, Sequenzen zwischen beiden Programmen übergeben.</dd>
+        <dt>KippScan</dt><dd>iPhone-App, die Sammelkarten über die Kamera erkennt und bewertet. <a href="https://kippscan.de">kippscan.de</a></dd>
+        <dt>Film</dt><dd>Filmproduktion für Tim Bendzko, Oliver Pocher, Esther Graf, Cat Ballou, Mo-Torres, ZSK sowie für Universal Music, Ford und Netto.</dd>
       </dl>
     </section>
 
-    <section aria-labelledby="h-umgesetzt">
-      <h2 id="h-umgesetzt" data-i18n="umgesetzt.titel">Umgesetzt</h2>
-      <!-- Neuer Eintrag: ein <li> kopieren, Nummer anpassen. Die Einordnung („art“) steht in js/texte.js.
-           Nur Belegbares: keine Kunden oder Projekte, die nicht stimmen. Braun: nicht aufnehmen. -->
-      <ol class="liste">
-        <li class="gruppe" data-i18n="gruppe.film">Film</li>
-        <li>
-          <span class="nr">01</span>
-          <span class="was"><span data-i18n="musik.name">Musik</span><span class="art" data-i18n="art.filmproduktion">Filmproduktion für</span></span>
-          <!-- Reihenfolge = Gewichtung. Der Punkt hängt am Namen davor, damit keine Zeile mit „·“ beginnt. -->
-          <span class="namen"><span>Tim Bendzko ·</span> <span>Oliver Pocher ·</span> <span>Esther Graf ·</span> <span>Cat Ballou ·</span> <span>Mo-Torres ·</span> <span>ZSK ·</span> <span>LEA x LINDA ·</span> <span>K-FLY ·</span> <span>Mag Wolfskin ·</span> <span>Kaya Q ·</span> <span>Tim Schulz ·</span> <span>WIR bleiben WIR ·</span> <span>Plätzchen Rapzept</span></span>
-        </li>
-        <li>
-          <span class="nr">02</span>
-          <span class="was"><span data-i18n="marken.name">Marken &amp; Labels</span><span class="art" data-i18n="art.filmproduktion">Filmproduktion für</span></span>
-          <span class="namen"><span>Universal Music ·</span> <span>Ford ·</span> <span>Netto</span></span>
-        </li>
-
-        <li class="gruppe" data-i18n="gruppe.apps">Apps &amp; Tools</li>
-        <li>
-          <span class="nr">03</span>
-          <span class="was">KippScan<span class="art" data-i18n="art.iphone">iPhone-App</span></span>
-          <a class="link" href="https://kippscan.de">kippscan.de</a>
-        </li>
-        <li>
-          <span class="nr">04</span>
-          <span class="was">FreezeFramesFinder<span class="art" data-i18n="art.panel">Premiere-Panel</span></span>
-          <a class="link" href="https://freezeframesfinder.de">freezeframesfinder.de</a>
-        </li>
-        <!-- Wieder aufnehmen, sobald es eine öffentliche Seite dazu gibt:
-        <li><span class="nr">05</span><span class="was">Cuelaro<span class="art">Mac-App</span></span><a class="link" href="…">…</a></li>
-        <li><span class="nr">06</span><span class="was">KAS Motion Tools<span class="art">Presets für After Effects</span></span><a class="link" href="…">…</a></li>
-        -->
-      </ol>
-    </section>
-
     <section aria-labelledby="h-kontakt" id="kontakt">
-      <h2 id="h-kontakt" data-i18n="kontakt.titel">Kontakt</h2>
-      <div>
-        <p class="anstoss" data-i18n="kontakt.anstoss">Du brauchst einen Film, einen Schnitt oder ein Werkzeug? Schreib mir.</p>
-        <dl class="spec">
-          <dt data-i18n="kontakt.mail">E-Mail</dt><dd><a href="mailto:thomas@kipp-alcantara.de">thomas@kipp-alcantara.de</a></dd>
-          <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/thomas-kipp-alcantara/" rel="me">thomas-kipp-alcantara</a></dd>
-        </dl>
-        <a class="btn" href="kontakt.vcf" download="Thomas Kipp Alcantara.vcf" data-i18n="kontakt.speichern">Kontakt speichern</a>
-      </div>
+      <h2 id="h-kontakt">Kontakt</h2>
+      <dl class="spec">
+        <dt>E-Mail</dt><dd><a href="mailto:thomas@kipp-alcantara.de">thomas@kipp-alcantara.de</a></dd>
+        <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/thomas-kipp-alcantara/" rel="me">thomas-kipp-alcantara</a></dd>
+        <dt>Ort</dt><dd>Overath bei Köln</dd>
+      </dl>
+      <a class="btn" href="kontakt.vcf" download="Thomas Kipp Alcantara.vcf">Kontakt speichern</a>
     </section>
 
     <footer class="fuss">
-      <a href="impressum.html" data-i18n="fuss.impressum">Impressum</a>
-      <a href="datenschutz.html" data-i18n="fuss.datenschutz">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
     </footer>
 
   </main>
-
-  <script src="js/texte.js?v=3"></script>
-  <script src="js/main.js?v=2"></script>
 </body>
 </html>
